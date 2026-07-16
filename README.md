@@ -35,10 +35,6 @@ This project is an experimental implementation of a thesis research focused on a
                ▼
    [Evaluation Metrics] ──> [Deployment (Streamlit App)]
 
-<p align="center">
-  <img src="projectarchitecture.png" alt="Project Architecture and Research Workflow">
-</p>
-
 ---
 
 ## 🚀 Installation
