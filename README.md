@@ -33,7 +33,7 @@ This project is an experimental implementation of a thesis research focused on a
 [Modeling (Bi-LSTM / IndoBERT)] <── [Data Preparation (Cleaning & Tokenization)]
                │
                ▼
-   [Evaluation Metrics] ──> [Deployment (Streamlit App)]
+[Evaluation Metrics] ──> [Deployment (Streamlit App)]
 
 ---
 
@@ -42,8 +42,6 @@ This project is an experimental implementation of a thesis research focused on a
 ### Requirements
 
 Python 3.8+ , PyTorch 2.0+ , Transformers (Hugging Face) , Scikit-Learn , Streamlit , Pandas & NumPy , Matplotlib & Seaborn , TextBlob & WordCloud
-
-### Setup
 
 ### Setup
 
