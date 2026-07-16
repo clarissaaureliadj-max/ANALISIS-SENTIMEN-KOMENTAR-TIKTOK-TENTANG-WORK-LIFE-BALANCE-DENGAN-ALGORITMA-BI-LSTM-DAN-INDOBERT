@@ -77,6 +77,7 @@ tiktok-wlb-sentiment/
 ├── models/
 │   ├── bilstm_model.h5
 │   └── indobert_fine_tuned/
+```
 
 ```
 
