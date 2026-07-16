@@ -25,22 +25,52 @@ This project is an experimental implementation of a thesis research focused on a
 
 ---
 
-## Project Architecture / Research Workflow
+## 🏗️ Project Architecture / Research Workflow
 
-[Business Understanding] ──> [Data Understanding (Scraping/Apify)]
-                                       │
-                                       ▼
-[Modeling (Bi-LSTM / IndoBERT)] <── [Data Preparation (Cleaning & Tokenization)]
-               │
-               ▼
-[Evaluation Metrics] ──> [Deployment (Streamlit App)]
+## 🏗️ Project Architecture / Research Workflow
 
+The research follows the **CRISP-DM** methodology. The interactive process workflow framework is detailed below:
+
+```mermaid
+graph TD
+    %% Defining Color Palette (Clean Executive Vibe)
+    classDef stepBox fill:#FCFBF9,stroke:#5C4033,stroke-width:2px,rx:8,ry:8,color:#2C1E18;
+    classDef accentBox fill:#F4F1EA,stroke:#8B7355,stroke-width:2px,rx:8,ry:8,color:#2C1E18;
+    classDef lineStyle stroke:#8B7355,stroke-width:2px;
+
+    %% Workflow Nodes with Detailed Description Strings
+    Step1["<b>1. Business Understanding</b><br/>• Manual evaluation of massive social media text is slow and subjective.<br/>• <i>Goal: Build an automated system to analyze public perception of work-life balance.</i>"]:::stepBox
+    
+    Step2["<b>2. Data Understanding</b><br/>• Raw TikTok comments scraped primary data source using Apify API.<br/>• Gathered 8,069 raw textual interactions, likes, and workplace opinions."]:::stepBox
+    
+    Step3["<b>3. Data Preparation</b><br/>• Pipeline: Case folding ➔ emoji & punctuation removal ➔ tokenization ➔ label mapping.<br/>• Dropped 7,111 missing/corrupted rows & 47 text duplicates ➔ 911 clean samples."]:::stepBox
+    
+    Step4["<b>4. Modeling Phase</b><br/>• Partitioned data via Stratified Sampling with an 80:20 distribution ratio.<br/>• Parallel architectures training: Sequential Bi-LSTM vs Pre-trained IndoBERT."]:::stepBox
+    
+    Step5["<b>5. Evaluation Metrics</b><br/>• Compared models stability using Precision, Recall, and Macro/Weighted F1-Score.<br/>• IndoBERT established dominance with 96.35% accuracy over Bi-LSTM's 87.50%."]:::stepBox
+    
+    Step6["<b>6. System Deployment</b><br/>• Embedded the superior IndoBERT engine into an interactive web interface.<br/>• Streamlit UI framework supports manual inputs, bulk CSV upload, and Apify streams."]:::accentBox
+
+    %% Flow Connections
+    Step1 ==> Step2
+    Step2 ==> Step3
+    Step3 ==> Step4
+    Step4 ==> Step5
+    Step5 ==> Step6
+
+    %% Applying custom connection lines
+    linkStyle 0,1,2,3,4 stroke:#8B7355,stroke-width:2px;
+
+### Alternatif Menggunakan File Gambar (`.png`)
+Jika Anda tetap ingin mengekspor kode Mermaid di atas menjadi berkas gambar statis menggunakan *tool* seperti [Mermaid Live Editor](https://mermaid.live/) lalu menyimpannya sebagai file `research_workflow.png`, Anda bisa menggunakan tag `<p align="center">` berikut untuk menampilkannya di GitHub secara rapi dan berada di posisi tengah:
+
+```markdown
 ## 🏗️ Project Architecture / Research Workflow
 
 The research follows the **CRISP-DM** methodology. The framework diagram (in English) is shown below — vector source: `research_workflow.svg`.
 
 <p align="center">
-  <img src="research_workflow.png" alt="Research Workflow — TikTok WLB Sentiment Analysis">
+  <img src="data/research_workflow.png" alt="Research Workflow — TikTok WLB Sentiment Analysis" width="85%">
 </p>
 
 ---
