@@ -119,6 +119,7 @@ tiktok-wlb-sentiment/
 
 ## 📝 Citation
 
+  ```bibtex
   title={Analisis Sentimen Komentar Tiktok Tentang Work Life Balance Dengan Menggunakan Algoritma Bi-LSTM Dan IndoBERT},
   author={Djoniwan, Clarissa Aurelia},
   journal={Thesis Report of Information Systems Study Program},
