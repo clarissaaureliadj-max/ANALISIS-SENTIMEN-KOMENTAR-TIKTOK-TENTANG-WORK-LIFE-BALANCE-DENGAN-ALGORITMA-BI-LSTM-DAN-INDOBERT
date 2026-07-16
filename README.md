@@ -80,7 +80,6 @@ tiktok-wlb-sentiment/
 │   └── indobert_fine_tuned/
 
 ```
----
 
 ## 🏋️ Training
 
@@ -89,11 +88,13 @@ The model training process is configured using a Stratified Sampling distributio
 ```bash
 python train_indobert.py --batch_size 128 --max_length 512 --epochs 5```
 python train_bilstm.py --epochs 10 --batch_size 32
+
 ---
 
 ## 📊 Results
 
 MetricIndoBERT ModelBi-LSTM ModelAccuracy96.35%87.50%Precision Macro94.89%75.10%Recall Macro93.11%67.52%F1-Score Macro93.93%70.74%Precision Weighted96.42%86.66%Recall Weighted96.35%87.50%F1-Score Weighted96.37%86.87%
+
 ---
 
 ## 🏗️ Project Structure
@@ -111,9 +112,8 @@ tiktok-wlb-sentiment/
 ├── train_bilstm.py                   # Training script for Bi-LSTM model
 ├── requirements.txt                  # Project software dependency list
 └── README.md
-```
 
----
+```
 
 ## 📝 Citation
 
@@ -123,9 +123,8 @@ tiktok-wlb-sentiment/
   school={Universitas Multimedia Nusantara},
   year={2026}
 }
-```
 
----
+```
 
 ## 🙏 Acknowledgments
 
