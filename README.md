@@ -35,6 +35,10 @@ This project is an experimental implementation of a thesis research focused on a
                ▼
 [Evaluation Metrics] ──> [Deployment (Streamlit App)]
 
+<p align="center">
+  <img src="alur-riset.png" alt="Arsitektur Proyek dan Alur Penelitian CRISP-DM">
+</p>
+
 ---
 
 ## 🚀 Installation
