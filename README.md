@@ -35,8 +35,12 @@ This project is an experimental implementation of a thesis research focused on a
                ▼
 [Evaluation Metrics] ──> [Deployment (Streamlit App)]
 
+## 🏗️ Project Architecture / Research Workflow
+
+The research follows the **CRISP-DM** methodology. The framework diagram (in English) is shown below — vector source: `research_workflow.svg`.
+
 <p align="center">
-  <img src="alur-riset.png" alt="Arsitektur Proyek dan Alur Penelitian CRISP-DM">
+  <img src="research_workflow.png" alt="Research Workflow — TikTok WLB Sentiment Analysis">
 </p>
 
 ---
