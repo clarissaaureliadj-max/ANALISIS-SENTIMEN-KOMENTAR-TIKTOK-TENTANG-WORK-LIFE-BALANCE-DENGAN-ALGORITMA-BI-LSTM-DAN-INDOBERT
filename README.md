@@ -60,7 +60,6 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 3. Install dependencies:
 ```bash
 pip install -r requirements.txt
-```
 
 ---
 
@@ -78,6 +77,7 @@ tiktok-wlb-sentiment/
 ├── models/
 │   ├── bilstm_model.h5
 │   └── indobert_fine_tuned/
+```
 
 ```
 
@@ -85,7 +85,6 @@ tiktok-wlb-sentiment/
 
 The model training process is configured using a Stratified Sampling distribution at an 80:20 ratio (6,455 training samples and 1,614 testing samples). To train the IndoBERT model (fine-tuned on top of the base weights of w11wo/indonesian-roberta-base-sentiment-classifier):
 
-```bash
 python train_indobert.py --batch_size 128 --max_length 512 --epochs 5```
 python train_bilstm.py --epochs 10 --batch_size 32
 
