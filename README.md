@@ -113,6 +113,7 @@ tiktok-wlb-sentiment/
 ├── train_bilstm.py                   # Training script for Bi-LSTM model
 ├── requirements.txt                  # Project software dependency list
 └── README.md
+```
 
 ```
 
@@ -124,6 +125,7 @@ tiktok-wlb-sentiment/
   school={Universitas Multimedia Nusantara},
   year={2026}
 }
+```
 
 ```
 
