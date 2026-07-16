@@ -66,10 +66,10 @@ pip install -r requirements.txt
 
 ## 📊 Dataset Preparation
 
-Total Initial Samples: 8,069 raw comment records.  
-Final Filtered Dataset: 911 samples (after handling systemic missing values and removing 47 duplicate text entries). 
-File Format: .csv.  
-Final Dataset Sentiment Distribution: Negative: 4,771 comments (59.13%).  Positive: 1.832 comments (22.70%).  Neutral: 1,466 comments (18.17%).  
+**Total Initial Samples:** 8,069 raw comment records.  
+**Final Filtered Dataset:** 911 samples (after handling systemic missing values and removing 47 duplicate text entries). 
+**File Format:** csv.  
+**Final Dataset Sentiment Distribution:** Negative: 4,771 comments (59.13%).  Positive: 1.832 comments (22.70%).  Neutral: 1,466 comments (18.17%).  
 
 ```
 tiktok-wlb-sentiment/
@@ -147,7 +147,7 @@ Big Data Lab, Information Systems Study Program, Universitas Multimedia Nusantar
 
 ## 📧 Contact
 
-- Campus Email: clarissa.aurelia1@student.umn.ac.idm
+- Campus Email: clarissa.aurelia1@student.umn.ac
 
 ---
 
