@@ -45,6 +45,8 @@ Python 3.8+ , PyTorch 2.0+ , Transformers (Hugging Face) , Scikit-Learn , Stream
 
 ### Setup
 
+### Setup
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/clarissaaurelia/tiktok-wlb-sentiment.git
@@ -60,15 +62,16 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 3. Install dependencies:
 ```bash
 pip install -r requirements.txt
-
 ```
+
+---
 
 ## 📊 Dataset Preparation
 
-**Total Initial Samples:** 8,069 raw comment records.  
-**Final Filtered Dataset:** 911 samples (after handling systemic missing values and removing 47 duplicate text entries).  
-**File Format:** csv.  
-**Final Dataset Sentiment Distribution:** Negative: 4,771 comments (59.13%). Positive: 1.832 comments (22.70%). Neutral: 1,466 comments (18.17%).  
+Total Initial Samples: 8,069 raw comment records.  
+Final Filtered Dataset: 911 samples (after handling systemic missing values and removing 47 duplicate text entries). 
+File Format: .csv.  
+Final Dataset Sentiment Distribution: Negative: 4,771 comments (59.13%).  Positive: 1.832 comments (22.70%).  Neutral: 1,466 comments (18.17%).  
 
 tiktok-wlb-sentiment/
 ├── data/
@@ -83,9 +86,11 @@ tiktok-wlb-sentiment/
 
 ## 🏋️ Training
 
-The model training process is configured using a Stratified Sampling distribution at an 80:20 ratio (6,455 training samples and 1,614 testing samples). To train the IndoBERT model (fine-tuned on top of the base weights of w11wo/indonesian-roberta-base-sentiment-classifier):
+The model training process is configured using a Stratified Sampling distribution at an 80:20 ratio (6,455 training samples and 1,614 testing samples).
 
-python train_indobert.py --batch_size 128 --max_length 512 --epochs 5```
+Structure:
+```bash
+python train_indobert.py --batch_size 128 --max_length 512 --epochs 5
 python train_bilstm.py --epochs 10 --batch_size 32
 ```
 
@@ -93,12 +98,17 @@ python train_bilstm.py --epochs 10 --batch_size 32
 
 ## 📊 Results
 
-MetricIndoBERT ModelBi-LSTM ModelAccuracy96.35%87.50%Precision Macro94.89%75.10%Recall Macro93.11%67.52%F1-Score Macro93.93%70.74%Precision Weighted96.42%86.66%Recall Weighted96.35%87.50%F1-Score Weighted96.37%86.87%
+IndoBERT demonstrated absolute dominance, achieving a peak accuracy of 96.35%. The transformer self-attention mechanism proved significantly more precise at understanding casual, short, and highly variable sentence structures unique to Indonesian TikTok comments.  Bi-LSTM achieved a solid accuracy of 87.50%, showing its best training stability around the 9th epoch before indicating mild overfitting tendencies toward the end of the process
 
 ---
 
 ## 🏗️ Project Structure
 
+**Section Description** Explain you project structure.
+
+Structure: 
+
+```
 tiktok-wlb-sentiment/
 ├── data/                             # Internal dataset files
 ├── src/
@@ -114,11 +124,12 @@ tiktok-wlb-sentiment/
 └── README.md
 ```
 
-```
+---
 
 ## 📝 Citation
 
-  ```bibtex
+```bibtex
+@article{djoniwan2026analisis,
   title={Analisis Sentimen Komentar Tiktok Tentang Work Life Balance Dengan Menggunakan Algoritma Bi-LSTM Dan IndoBERT},
   author={Djoniwan, Clarissa Aurelia},
   journal={Thesis Report of Information Systems Study Program},
@@ -127,7 +138,7 @@ tiktok-wlb-sentiment/
 }
 ```
 
-```
+---
 
 ## 🙏 Acknowledgments
 
@@ -137,7 +148,7 @@ Big Data Lab, Information Systems Study Program, Universitas Multimedia Nusantar
 
 ## 📧 Contact
 
-Campus Email: clarissa.aurelia1@student.umn.ac.id
+- Campus Email: clarissa.aurelia1@student.umn.ac.idm
 
 ---
 
@@ -150,4 +161,5 @@ This academic research project is released under the MIT License. The codebase i
 ## Tips
 
 You can just download this Read Me template and modify it. 
+
 ---
