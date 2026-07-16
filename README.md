@@ -41,14 +41,14 @@ This project is an experimental implementation of a thesis research focused on a
 
 ### Requirements
 
-Python 3.8+
-PyTorch 2.0+
-Transformers (Hugging Face)
-Scikit-Learn
-Streamlit
-Pandas & NumPy
-Matplotlib & Seaborn
-TextBlob & WordCloud
+-Python 3.8+
+-PyTorch 2.0+
+-Transformers (Hugging Face)
+-Scikit-Learn
+-Streamlit
+-Pandas & NumPy
+-Matplotlib & Seaborn
+-TextBlob & WordCloud
 
 ### Setup
 
